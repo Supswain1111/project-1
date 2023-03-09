@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title> Expense Tracker </title>
+    </head>
+    <body>
+            <form onsubmit="SaveToLocalStorage(event)">
+                <label for="expense amount"> Choose Expenseamount:</label>
+                <input type="text" id="amount" name="expenseAmount">
+                <label for ="description"> Choose Description: </label>
+                <input type="text" id="description" name="Description">
+                <label for="Choose a Category">Choose a Category:</label>
+                <select name="category" id="category" name="category">
+                <option value="fuel">Fuel</option>
+                <option value="food">Food</option>
+                <option value="electricity">Electricity</option>
+                <option value="movie">Movie</option>
+                <option value="shopping">Shopping</option>
+                <option value="travel">Travel</option>
+                </select>
+                <button>Add expense</button>
+            </form>
+            <ul id="Items"></ul>
+ 
+        <script src="expense.js">
+             
+        </script>
+    </body>
+    <html>
